@@ -1,5 +1,8 @@
+#Proposta
 Projeto de site para corretores de imóveis.
+- Sistema de login.
+- CRUD
+- CMS
 
-Usando mysqli das bibliotecas do php.
-
-Sistema de login e cadastro de imóveis.
+#Linguagens / Bibliotecas 
+Usando mysqli no php.
