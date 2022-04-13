@@ -4,7 +4,7 @@
     <span class="navbar-toggler-icon"></span>
   </button>
   <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-    <a class="btn btn-outline-light mr-sm-1" href="index2.php">Inicial</a>
+    <a class="btn btn-outline-light mr-sm-1" href="index.php">Inicial</a>
     <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
       <li class="nav-item active">
         <a class="btn btn-outline-light mr-sm-1" href="casas.php">Casas<span class="sr-only">(Página atual)</span></a>

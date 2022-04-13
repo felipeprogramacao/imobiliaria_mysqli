@@ -7,54 +7,59 @@
 <link rel="stylesheet" href="arqv/bootstrap.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 		
 <link rel="stylesheet" href="casas.css" type="text/css"/>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="log/util.css">
+<link rel="stylesheet" type="text/css" href="log/main.css">
 </head>
 
 <body>
 
 <?php include 'nav.php'; ?>
 
-<div id="carouselExampleFade" class="carousel slide carousel-fade m-1" data-ride="carousel">
-  <div class="carousel-inner">
-    <div class="carousel-item">
-      <img class="d-block w-100" src="arqv/foto1.jpg" alt="Primeiro Slide">
-    </div>
-    <div class="carousel-item">
-      <img class="d-block w-100" src="arqv/foto2.jpg" alt="Segundo Slide">
-    </div>
-    <div class="carousel-item active">
-      <img class="d-block w-100" src="arqv/foto3.jpg" alt="Terceiro Slide">
-    </div>
-  </div>
-  
-</div>
-
-
-
-<nav class="navbar navbar-expand-lg navbar-navbar-dark bg-dark"> 
-
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Alterna navegação">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-  <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-    
-    
-    <form class="form-inline my-2 my-lg-0">
-      <input class="form-control mr-sm-2" type="search" placeholder="Sua procura." aria-label="Pesquisar">
-      <button class="btn btn-outline-primary" type="submit">Pesquisar</button>
-      
-    </form>
-  </div>
-</nav>
 
 						
 <br>
 <form method="POST" id="form_cadast">
 <br>
-<h2 id="cab_casas" align="center"  ><u>FAÇA SEU LOGIN</u></h2>
+<h2 id="cab_casas" align="center"  ><u>ACESSO RESTRITO</u></h2>
 <br><br>
 </form>
-    
-    <br>
+
+ <br>
+ <div class="limiter">
+<div class="container-login100">
+<div class="wrap-login100">
+<form class="login100-form validate-form" action="logar2.php" method="POST">
+<span class="login100-form-title p-b-26">
+TELA DE LOGIN
+</span>
+<span class="login100-form-title p-b-48">
+<i class="zmdi zmdi-font"></i>
+</span>
+<div class="wrap-input100 validate-input">
+<input class="input100" type="text" name="usuario">
+<span class="focus-input100" data-placeholder="Nome de Usuário"></span>
+</div>
+<div class="wrap-input100 validate-input" data-validate="Coloque sua senha.">
+<input class="input100" type="password" name="senha">
+<span class="focus-input100" data-placeholder="Senha"></span>
+</div>
+<div class="container-login100-form-btn">
+<div class="wrap-login100-form-btn">
+<div class="login100-form-bgbtn"></div>
+<button class="login100-form-btn">Acesso</button>
+</div>
+</div>
+<div class="text-center p-t-115">
+<span class="txt1">Caso não tenha login, cadastrado.</span>
+<a class="txt2" href="novo_usuario.php">Aperte aqui.</a>
+</div>
+</form>
+</div>
+</div>
+</div>
+ 
+ 
     <table class="table table-dark m-1">
   <thead>
     <tr>

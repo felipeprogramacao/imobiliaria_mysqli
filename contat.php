@@ -13,38 +13,7 @@
 
 <?php include 'nav.php'; ?>
 
-<div id="carouselExampleFade" class="carousel slide carousel-fade m-1" data-ride="carousel">
-  <div class="carousel-inner">
-    <div class="carousel-item">
-      <img class="d-block w-100" src="arqv/foto1.jpg" alt="Primeiro Slide">
-    </div>
-    <div class="carousel-item">
-      <img class="d-block w-100" src="arqv/foto2.jpg" alt="Segundo Slide">
-    </div>
-    <div class="carousel-item active">
-      <img class="d-block w-100" src="arqv/foto3.jpg" alt="Terceiro Slide">
-    </div>
-  </div>
-  
-</div>
-
-
-
-<nav class="navbar navbar-expand-lg navbar-navbar-dark bg-dark"> 
-
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Alterna navegação">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-  <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-    
-    
-    <form class="form-inline my-2 my-lg-0">
-      <input class="form-control mr-sm-2" type="search" placeholder="Sua procura." aria-label="Pesquisar">
-      <button class="btn btn-outline-primary" type="submit">Pesquisar</button>
-      
-    </form>
-  </div>
-</nav>
+<?php include 'carros_pesq.php'; ?>
 
 						
 <br>
@@ -53,6 +22,20 @@
 <h2 id="cab_casas" align="center"  ><u>CONTATO</u></h2>
 <br><br>
 </form>
+    <!--bootstrap-->
+    <div class="container">
+  <div class="row">
+    <div class="col-sm" id="primeiro">
+      Uma de três colunas
+    </div>
+    <div class="col-sm" id="segundo">
+      Uma de três colunas
+    </div>
+    <div class="col-sm" id="terceiro">
+      Uma de três colunas
+    </div>
+  </div>
+</div>
     
     <br>
     <table class="table table-dark m-1">
