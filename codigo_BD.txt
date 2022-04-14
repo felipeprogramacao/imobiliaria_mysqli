@@ -1,0 +1,8 @@
+create DATABASE imobiliaria;
+
+use imobiliaria;
+
+CREATE TABLE casa(id_casa int AUTO_INCREMENT PRIMARY KEY, proprietario varchar(100), quartos varchar(100), garagem varchar(100), diferencial_1 varchar(100), diferencial_2 varchar(100), valor varchar(15));
+
+CREATE TABLE imagem_casa(id_imagem_casa int AUTO_INCREMENT PRIMARY KEY, nome_imagem varchar(100), fk_id_casa int, FOREIGN KEY(fk_id_casa) REFERENCES casa(id_casa) ON DELETE CASCADE);
+

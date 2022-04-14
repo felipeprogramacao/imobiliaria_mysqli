@@ -6,7 +6,19 @@
 </head>
 
 <body>
+<?php
+session_start();
+		if(!isset($_SESSION['id_usuario']))
+		{
+			
+			header('Location:index.php');
+			exit;
+			}else{
+			
+			?>
+LOGIN EFETUADO COM SUSSESSO
 
-ola. Brasil
+
+<?php } ?>
 </body>
 </html>

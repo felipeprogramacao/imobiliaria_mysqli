@@ -20,13 +20,5 @@
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Alterna navegação">
     <span class="navbar-toggler-icon"></span>
   </button>
-  <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-    
-    
-    <form class="form-inline my-2 my-lg-0">
-      <input class="form-control mr-sm-2" type="search" placeholder="Sua procura." aria-label="Pesquisar">
-      <button class="btn btn-outline-primary" type="submit">Pesquisar</button>
-      
-    </form>
-  </div>
+  
 </nav>

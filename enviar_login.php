@@ -1,6 +1,6 @@
 <?php
 
-		$conectar=mysqli_connect('localhost','root','','imoveis');
+		 include 'conectar.php';  
 		
 		session_start();
 		
@@ -17,7 +17,7 @@
 			$_SESSION['logado']=true;
 			$_SESSION['id_usuario']=$dados['id_casa'];
 		
-		header('location: index2.php');
+		header('location: index.php');
 
 								}
 

@@ -1,6 +1,6 @@
 <?php
 
-			$conectar=mysqli_connect('localhost','root','','imoveis');
+			 include 'conectar.php';  
 
 			session_start();
 			
@@ -17,8 +17,11 @@
 					$_SESSION['logado']=true;
 					$_SESSION['id_usuario']=$dados['id_casa'];
 					
-					header('Location:home2.php');
+					header('Location:index_corretores_casas.php');
 				
-				}
-
+				}else{
+					
+					echo  '<h2>'."ERRO / Confira sua Senha ou Login".'<h2>';
+					}
+				
 ?>

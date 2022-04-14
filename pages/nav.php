@@ -1,7 +1,3 @@
-</head>
-
-<body>
-
 <nav class="navbar navbar-expand-lg navbar-navbar-dark bg-dark"> 
 
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Alterna navegação">

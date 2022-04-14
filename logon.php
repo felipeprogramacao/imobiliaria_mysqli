@@ -1,23 +1,10 @@
-<!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml"><head>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-<title>Imóveis Caxias do Sul - Apartamentos</title>
-
-<link rel="stylesheet" href="arqv/css/bootstrap.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-		
-<link rel="stylesheet" href="arqv/css/casas.css" type="text/css"/>
+<?php include 'pages/header.php'; ?>
+<title>Imóveis Apartamentos</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" type="text/css" href="log/util.css">
 <link rel="stylesheet" type="text/css" href="log/main.css">
-</head>
-
-<body>
-
 <?php include 'nav.php'; ?>
-
-
-						
+				
 <br>
 <form method="POST" id="form_cadast">
 <br>
@@ -60,49 +47,6 @@ TELA DE LOGIN
 </div>
  
  
-    <table class="table table-dark m-1">
-  <thead>
-    <tr>
-      <th scope="col"></th>
-      <th scope="col">Compra</th>
-      <th scope="col">Aluguel</th>
-      <th scope="col">Investimentos</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th scope="row">1</th>
-      <td>veronica@imoveiscaxias.com.br</td>
-      <td>sofia@imoveiscaxias.com.br</td>
-      <td>vitoria@imoveiscaxias.com.br</td>
-    </tr>
-    <tr>
-      <th scope="row">2</th>
-      <td>patricia@imoveiscaxias.com.br</td>
-      <td>maria_v@imoveiscaxias.com.br</td>
-      <td>sivia@imoveiscaxias.com.br</td>
-    </tr>
-    <tr>
-      <th scope="row">3</th>
-      <td>mateus@imoveiscaxias.com.br</td>
-      <td>carlos_s@imoveiscaxias.com.br</td>
-      <td>pedro_a@imoveiscaxias.com.br</td>
-    </tr>
-  </tbody>
-</table>
-    
-  </div>
-
-
-
-
-
-
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Pesquisa Imóveis Caxias do Sul</title>
-
-
-
 
 <nav class="navbar navbar-expand-lg navbar-navbar-dark bg-dark"> 
 
