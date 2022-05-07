@@ -12,14 +12,6 @@
         
 		 include 'conectar.php';  
 		
-		session_start();
-		if(!isset($_SESSION['id_usuario']))
-		{
-			
-			header("Location: index.php");
-			exit;
-			}
-		
 		$dados=mysqli_query($conectar,"SELECT *,(SELECT nome_imagem from imagem_casa WHERE fk_id_casa=casa.id_casa LIMIT 1)as foto_capa FROM casa");
 	
 		
@@ -40,48 +32,11 @@
 <br><br>
 </form>
     
-					<br>
-                    <div class="d-flex flex-row-reverse bd-highlight">
-  
- <a class="btn btn-primary" href="logout.php" role="button">SAIR</a>
+						
 
-  <div class="p-2 href="#" bd-highlight">Você está logado</div>
-</div>	
-<br>
-<h2 align="center">CLIENTES NOVOS</h2>
+<h2 align="center">LISTA DE CLIENTES</h2>
                 
-           <br>     
-<table border="3" align="center">
-			<tr>
-					<td>CLIENTES</td>
-                    <td>IMÓVEIS</td>
-                    <td>SEGURANÇA</td>
-                    <td>FOTOS</td>
-                    <td>CONFIRMAR</td>
-			</tr>
-            
-            <tr>
-			<form action="enviar.php" method="POST" enctype="multipart/form-data">
-                    <td> <LABEL>Proprietário</LABEL>
-                <input type="text" name="prop"></td>
-                    <td><LABEL>Terreno</LABEL>
-                <input type="text" name="ter1"></td>
-                    <td><label>Senha</label>
-                <input type="password" name="senh"></td>
-                    <td><input type="file" name="fot[]" multiple></td>
-                    <td><input type="submit" value="CADASTRAR"></td>
-                 </form>
-			</tr>
-            		
-               
-
-</table>
-
-<br><br><br>
-
-<h2 align="center">EDITE O CADASTRO</h2>
-<br>
-
+                
 <table border="3" align="center">
 			<tr>
 					<td>PROPRIETÁRIO</td>
@@ -94,7 +49,7 @@
                         <?php
                         		foreach($dados as $xx1){
 									$proprie=$xx1["proprietario"];
-									$terreno=$xx1["terreno"];
+									$terren=$xx1["terreno"];
 									$senha_mostrar=$xx1["senha"];
 									$id=$xx1["id_casa"];
 									$ft_capa=$xx1["foto_capa"];
@@ -104,7 +59,7 @@
                         
             <tr>
 					<td><?php echo $proprie; ?></td>
-                    <td><?php echo $terreno;  ?></td>
+                    <td><?php echo $terren;  ?></td>
                     <td><?php echo $senha_mostrar; ?></td>
                     <td><img src="imagens/<?php echo $ft_capa; ?>" width="300"></td>
                     
@@ -126,7 +81,9 @@
             <?php } ?>
 
 </table>
-<br><br><br>
+
+
+
 <nav class="navbar navbar-expand-lg navbar-navbar-dark bg-dark"> 
 
  

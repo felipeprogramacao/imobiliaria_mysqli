@@ -7,59 +7,37 @@
 <link rel="stylesheet" href="arqv/bootstrap.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 		
 <link rel="stylesheet" href="casas.css" type="text/css"/>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" type="text/css" href="log/util.css">
-<link rel="stylesheet" type="text/css" href="log/main.css">
 </head>
 
 <body>
 
 <?php include 'nav.php'; ?>
 
+<?php include 'carros_pesq.php'; ?>
 
 						
 <br>
 <form method="POST" id="form_cadast">
 <br>
-<h2 id="cab_casas" align="center"  ><u>ACESSO RESTRITO</u></h2>
+<h2 id="cab_casas" align="center"  ><u>CONTATO</u></h2>
 <br><br>
 </form>
-
- <br>
- <div class="limiter">
-<div class="container-login100">
-<div class="wrap-login100">
-<form class="login100-form validate-form" action="logar2.php" method="POST">
-<span class="login100-form-title p-b-26">
-TELA DE LOGIN
-</span>
-<span class="login100-form-title p-b-48">
-<i class="zmdi zmdi-font"></i>
-</span>
-<div class="wrap-input100 validate-input">
-<input class="input100" type="text" name="usuario">
-<span class="focus-input100" data-placeholder="Nome de Usuário"></span>
+    <!--bootstrap-->
+    <div class="container">
+  <div class="row">
+    <div class="col-sm" id="primeiro">
+      Uma de três colunas
+    </div>
+    <div class="col-sm" id="segundo">
+      Uma de três colunas
+    </div>
+    <div class="col-sm" id="terceiro">
+      Uma de três colunas
+    </div>
+  </div>
 </div>
-<div class="wrap-input100 validate-input" data-validate="Coloque sua senha.">
-<input class="input100" type="password" name="senha">
-<span class="focus-input100" data-placeholder="Senha"></span>
-</div>
-<div class="container-login100-form-btn">
-<div class="wrap-login100-form-btn">
-<div class="login100-form-bgbtn"></div>
-<button class="login100-form-btn">Acesso</button>
-</div>
-</div>
-<div class="text-center p-t-115">
-<span class="txt1">Caso não tenha login, cadastrado.</span>
-<a class="txt2" href="novo_usuario.php">Aperte aqui.</a>
-</div>
-</form>
-</div>
-</div>
-</div>
- 
- 
+    
+    <br>
     <table class="table table-dark m-1">
   <thead>
     <tr>
